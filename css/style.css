@@ -1,0 +1,292 @@
+
+@font-face {
+  font-family: ChristmasFarmhouse;
+  src: url("../assets/Christmas\ Farmhouse.otf");
+}
+
+@font-face {
+  font-family: Summerjoy;
+  src: url("../assets/Summerjoy.otf");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: rgb(244, 242, 232);
+    text-align: center;
+    background-color: rgb(67, 63, 63);
+    margin: 0;
+    padding-top: 0.67em;
+    padding-bottom: 0.67em;
+    font-family: ChristmasFarmhouse;
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+#list-of-categories {
+    color:rgb(244, 242, 232);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(67, 63, 63);
+    font-family: ChristmasFarmhouse;
+    letter-spacing: 1.4px;
+}
+
+.list-of-food {
+    display: flex;
+    color: rgb(244, 242, 232);
+    width: 70%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.food-thumbnail {
+    position: relative;
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+}
+
+.food-thumbnail > img {
+    width: 100%;
+    border: 1px solid white;
+    filter: brightness(50%) blur(1px);
+    transition: 0.3s;
+}
+
+.food-thumbnail:hover > img {
+    filter: brightness(100%);
+    box-shadow: 0px 0px 19px -6px rgba(250, 250, 252, 1);
+}
+
+.food-thumbnail > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.display-none {
+    display: none !important;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.input-div > label { 
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.input-div:has(input[type="radio"]:checked){
+    filter: drop-shadow(0px 0px 20px white) brightness(2);   
+}
+
+.details-of-one-meal {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    justify-content: flex-start;
+    align-content: center;
+    color:  rgb(244, 242, 232);
+    margin-right: 100px;
+    width: 30%;
+    font-family: ChristmasFarmhouse;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+#photo-of-meal { 
+    width: 25%;
+    height: 25%;
+    border: 1vw solid white; 
+    margin-right: 100px;  
+}
+
+.photo-and-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.ingredients-and-measure {
+    display: flex;
+    flex-direction: row;
+    width: 18%;
+    height: 100%;
+}
+
+.ingredients {
+    width: 100%;
+}
+
+.ingredients > li {
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid black;
+  font-family: Summerjoy;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+}
+
+.ingredients > li > span:first-child {
+  width: 50%;
+  text-align: left;
+}
+
+.ingredients > li > span:last-child {
+  width: 50%;
+  text-align: right;
+}
+
+.list-of-food > .food-thumbnail > span { 
+  font-family: ChristmasFarmhouse;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.measure {
+    width: 35%;
+}
+
+.ingredients-and-instruction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    color: white;
+    padding-left: 0px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 65%;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 50px;
+    font-family: ChristmasFarmhouse;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.input-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #f0f1f4;
+    font-size: 35px;
+    border-radius: 0px;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  
+  .input-div::before, .input-div::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #f0f1f4;
+    transition: .3s;
+  }
+  
+  .input-div::before {
+    top: 0;
+  }
+  
+  .input-div::after {
+    bottom: 0;
+  }
+  
+  .input-div:hover::before {
+    transform: translateX(-100%);
+  }
+  
+  .input-div:hover::after {
+    transform: translateX(100%);
+  }
+
+  #jhjh {
+    position: relative;
+    display: flex;
+    height: 100%;
+  }
+
+  .details-of-one-meal {
+    position: absolute;
+    left: 5%;
+    top: 0;
+  }
+
+  .left {
+    background-color: rgb(31, 31, 31);
+    height: 100%;
+    width: 8%;
+  }
+  
+  .left1 {
+    background-color: white;
+    height: 100%;
+    width: 1%;
+  }
+  
+  .left2 {
+    background-color: rgb(50, 50, 50);
+    height: 100%;
+    width: 19%;
+  }
+  
+  .left3 {
+    background-color: white;
+    height: 100%;
+    width: 1%;
+  }
+
+  .right {
+    background-color: rgb(31, 31, 31);
+    height: 100%;
+    width: 70%;
+  }
