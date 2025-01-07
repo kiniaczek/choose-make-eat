@@ -5,6 +5,10 @@ document.querySelectorAll('.input-div').forEach(el => {
 document.querySelectorAll('.food-thumbnail').forEach(el => { 
     el.addEventListener('click', getRecipeOfMeal)
 });
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    const navLinks = document.getElementById('mobile-nav-links');
+    navLinks.classList.toggle('active');
+  });
 
 async function getMealsByCategory(){
     document.querySelector('.list-of-food').classList.remove('display-none')
