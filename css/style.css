@@ -290,3 +290,129 @@ p {
     height: 100%;
     width: 70%;
   }
+
+
+
+
+
+  /* Media Queries for Responsiveness */
+@media (max-width: 1024px) { /* Tablets */
+  #list-of-categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .input-div {
+    width: 150px;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .list-of-food {
+    width: 90%;
+    gap: 15px;
+  }
+
+  .food-thumbnail {
+    width: 30%;
+  }
+
+  .details-of-one-meal {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .photo-and-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #photo-of-meal {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .ingredients > li {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) { /* Smartphones */
+  h1 {
+    font-size: 35px;
+    letter-spacing: 8px;
+    padding: 10px;
+  }
+
+  #list-of-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-div {
+    width: 120px;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .list-of-food {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .food-thumbnail {
+    width: 45%;
+  }
+
+  .details-of-one-meal {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #photo-of-meal {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .ingredients > li {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) { /* Small Smartphones */
+  h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding: 10px;
+  }
+
+  .input-div {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .food-thumbnail {
+    width: 100%;
+  }
+
+  .details-of-one-meal {
+    padding: 5px;
+  }
+
+  #photo-of-meal {
+    width: 100%;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
